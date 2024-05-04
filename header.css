@@ -43,7 +43,6 @@ z-index: 1;
     padding: 0px;
     margin-left: 0px;
     color: #fff;
-    display: none
 }
   
 .logo-text span {
@@ -199,6 +198,7 @@ z-index: 1;
         margin-top: 15px;
         margin-left: 95px;
         float: left;
+        display: none;
     }
 
     .logo-text span {
