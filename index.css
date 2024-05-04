@@ -1,12 +1,28 @@
 .carousel {
-    height: 350px; 
+    height: 24rem;
     /* overflow: hidden; */
 }
 
 .carousel-inner {
-    height: 400px
+    height: 23rem;
 }
 
 .carousel-item .carousel-img {
-    height: 380px
+    height: 23rem;
+}
+
+
+@media (max-width: 768px) {
+    .carousel {
+        height: 19rem;
+        z-index: -1;
+    }
+    
+    .carousel-inner {
+        height: 18rem;
+    }
+    
+    .carousel-item .carousel-img {
+        height: 18rem;
+    }
 }
