@@ -1,31 +1,26 @@
-body {
-    background-color: #A9A9A9;
-}
-
 nav {
-    position: -webkit-sticky;
     position: sticky;
     top: 0;
 }
 
 .menu-highlight {
-background: #d3d3d3;
-border-radius: 35px;
-padding: 0px 20px;
-line-height: 5px !important;
-margin: auto;
+    background: #d3d3d3;
+    border-radius: 35px;
+    padding: 0px 20px;
+    line-height: 5px !important;
+    margin: auto;
 }
 
 .navbar {
-padding: 0%;
-box-shadow: 0px 5px 10px 0px #aaa;
-position: sticky;
-width: 100%;
-background-color: #978c8c;  
-color: #000;
-opacity: 1;
-height: auto;
-z-index: 1;
+    padding: 0%;
+    box-shadow: 0px 5px 10px 0px #aaa;
+    position: sticky;
+    width: 100%;
+    background-color: #978c8c;  
+    color: #000;
+    opacity: 1;
+    height: auto;
+    z-index: 1;
 }
 
 .logo {
@@ -95,24 +90,24 @@ z-index: 1;
 
 @media (max-width: 768px) {
     .icon-bar {
-      width: 50px;
-    }
-    .navbar {
-        display: flex;
-       opacity: 1;
-       justify-content: space-between;
-    }
-
-    .navbar-container input[type="checkbox"],
-    .navbar-container .hamburger {
-       display: flex; 
-    }
-
-    .navbar-container {
+        width: 50px;
+      }
+      .navbar {
+        opacity: 0.95;
+        position: fixed;
+        top: 0;
+      }
+    
+      .navbar-container input[type="checkbox"],
+      .navbar-container .hamburger-lines {
+        display: block;
+      }
+    
+      .navbar-container {
         display: block;
         position: relative;
-        height: 4.5rem;
-    }
+        /* height: 60px; */
+      }
 
     /* .navbar-container input[type="checkbox"] {
         position: absolute;
