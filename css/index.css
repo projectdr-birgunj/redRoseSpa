@@ -25,7 +25,6 @@
 .main-card {
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
-    border: 2px solid red;
     /* flex-direction: row; */
     justify-content: center;
     align-items: center;
@@ -127,6 +126,18 @@ vertical-align: middle;
 }
 
 @media (max-width: 425px) {
+    .carousel {
+        height: 28rem;
+        /* overflow: hidden; */
+    }
+    .carousel-inner {
+        height: 27rem;
+    }
+    
+    .carousel-item .carousel-img {
+        height: 27rem;
+    }
+
     .main-card {
         grid-template-columns: 100%;
         gap: 1.5rem;
