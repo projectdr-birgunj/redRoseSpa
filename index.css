@@ -22,7 +22,7 @@
 }
 
 /* css for card style starts here*/
-.main {
+.main-card {
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
     border: 2px solid red;
