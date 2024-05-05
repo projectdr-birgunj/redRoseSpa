@@ -94,8 +94,8 @@ nav {
       }
       .navbar {
         opacity: 0.95;
-        position: fixed;
-        top: 0;
+        /* position: fixed; */
+        /* top: 0; */
       }
     
       .navbar-container input[type="checkbox"],
@@ -105,8 +105,8 @@ nav {
     
       .navbar-container {
         display: block;
-        position: relative;
-        /* height: 60px; */
+        /* position: relative; */
+        height: 4.5rem;
       }
 
     /* .navbar-container input[type="checkbox"] {
