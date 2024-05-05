@@ -1,3 +1,7 @@
+body {
+    background-color: #A9A9A9;
+}
+
 nav {
     position: -webkit-sticky;
     position: sticky;
@@ -94,23 +98,23 @@ z-index: 1;
       width: 50px;
     }
     .navbar {
+        display: flex;
        opacity: 1;
+       justify-content: space-between;
     }
 
     .navbar-container input[type="checkbox"],
-    .navbar-container .hamburger-lines {
-       display: block; 
+    .navbar-container .hamburger {
+       display: flex; 
     }
 
     .navbar-container {
-        /* border: 1px solid #3e5064;; */
         display: block;
         position: relative;
         height: 4.5rem;
-        /* height: 60px; */
     }
 
-    .navbar-container input[type="checkbox"] {
+    /* .navbar-container input[type="checkbox"] {
         position: absolute;
         display: block;
         height: 30px;
@@ -154,7 +158,87 @@ z-index: 1;
     .navbar-container .hamburger-lines .line3 {
         transform-origin: 0% 100%;
         transition: transform 0.4s ease-in-out;
-    }
+    } */
+
+    /* new hamburger changes */
+    /* GENERAL STYLES */
+.visuallyHidden {
+    position: absolute; 
+    overflow: hidden; 
+    clip: rect(0 0 0 0); 
+    height: 1px; width: 1px; 
+    margin: -1px; padding: 0; border: 0; 
+}
+
+.label-class {
+    height: 0;
+    display: block;
+}
+
+.hamburger {
+    margin-left: auto;
+    margin-right: 2rem;
+    /* border: 2px solid red; */
+    /* margin: 0 auto;
+    margin-top: 0px; */
+    bottom: 3rem;
+    left: 20px;
+    width: 30px;
+    height: 30px;
+    position: relative;
+}
+
+.hamburger .bar {
+    padding: 0;
+    width: 30px;
+    height: 4px;
+    background-color: maroon;
+    display: block;
+    border-radius: 4px;
+    transition: all 0.4s ease-in-out;
+    position: absolute; 
+}
+
+.bar1 {
+    top: 0;
+}
+
+.bar2,
+.bar3 {
+    top: 13.5px;
+}
+
+.bar3 {
+    right: 0;
+}
+
+.bar4 {
+    bottom: 0;
+}
+
+/* HAMBURGER 1 */
+.checkbox1:checked + label > .hamburger1 > .bar1{
+    transform: rotate(45deg);
+    transform-origin: 5%;
+    width: 41px
+}
+
+.checkbox1:checked + label > .hamburger1 > .bar2 {
+    transform: translateX(-40px);
+    background-color: transparent;
+}
+
+.checkbox1:checked + label > .hamburger1 > .bar3 {
+    transform: translateX(40px);
+    background-color: transparent;
+}
+
+.checkbox1:checked + label > .hamburger1 > .bar4 {
+    transform-origin: 5%;
+    transform: rotate(-45deg);
+    width: 41px;
+}
+/* new hamburger changes ends here */
 
     .menu-items {
         /* padding-top: 20vh; */
