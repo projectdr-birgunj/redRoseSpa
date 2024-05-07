@@ -216,7 +216,7 @@
         ],
       };
 
-      const myEnvVar = getEnvVar("DISCORD_WEBHOOK_URL");
+      const webhookUrl = getEnvVar("DISCORD_WEBHOOK_URL");
 
       const response = await fetch(webhookUrl, {
         method: "POST",
