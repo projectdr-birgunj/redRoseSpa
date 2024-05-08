@@ -184,55 +184,9 @@
     <!-- Appointment sections ends here -->
   </body>
 
-  <!-- <script src="../js/script.js"></script> -->
-
-  <script>
-    function getEnvVar(name) {
-      return process.env[name];
-    }
-    async function sendContact(ev) {
-      ev.preventDefault();
-
-      const custName = document.getElementById("name").value;
-      const custPhone = document.getElementById("phone").value;
-      const custEmail = document.getElementById("email").value;
-      const custService = document.getElementById("service").value;
-      const appointmentDate = document.getElementById("date").value;
-      const appointmentTime = document.getElementById("time").value;
-
-      const webhookBody = {
-        embeds: [
-          {
-            title: "Contact Form Submitted",
-            fields: [
-              { name: "Name", value: custName },
-              { name: "Phone", value: custPhone },
-              { name: "Email", value: custEmail },
-              { name: "Service", value: custService },
-              { name: "Date", value: appointmentDate },
-              { name: "Time", value: appointmentTime },
-            ],
-          },
-        ],
-      };
-
-      const webhookUrl = getEnvVar("DISCORD_WEBHOOK_URL");
-
-      const response = await fetch(webhookUrl, {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(webhookBody),
-      });
-
-      if (response.ok) {
-        alert("I have received your message!");
-      } else {
-        alert("There was an error! Try again later!");
-      }
-    }
-  </script>
+  <script type="text/javascript" src="../js/bookAppointment.js"></script>
+  <!-- <script type="module" src="../api.js"></script> -->
+  <script type="text/javascript" src="../config.js"></script>
 </html>
 
 <!-- https://discord.com/api/webhooks/1237458052425453648/GlYzaoHzwxKaEQHVuprdDU-M-e2ovqoc1RdHFcuDb4Ur8cRo6Hp7MYHbbqPDe0hD_egk -->
