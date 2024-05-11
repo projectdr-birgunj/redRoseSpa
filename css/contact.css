@@ -1,0 +1,11 @@
+.map {
+  text-align: center;
+  width: auto;
+  height: auto;
+}
+
+.map iframe {
+  border: 5px solid #000;
+  width: 90%;
+  height: 40%;
+}

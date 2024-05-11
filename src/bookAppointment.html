@@ -75,7 +75,7 @@
     <!-- Appointment section starts here -->
     <div class="formbold-main-wrapper">
       <div class="formbold-form-wrapper">
-        <form onsubmit="sendContact(event)">
+        <form onsubmit="sendContact(event)" method="POST">
           <div class="formbold-mb-5">
             <label for="name" class="formbold-form-label"> Full Name </label>
             <input
@@ -176,7 +176,9 @@
             </div>
           </div>
           <div>
-            <button type="submit" class="formbold-btn">Book Appointment</button>
+            <button type="submit" id="fetch-data-button" class="formbold-btn">
+              Book Appointment
+            </button>
           </div>
         </form>
       </div>
@@ -186,7 +188,7 @@
 
   <script type="text/javascript" src="../js/bookAppointment.js"></script>
   <!-- <script type="module" src="../api.js"></script> -->
-  <script type="text/javascript" src="../config.js"></script>
+  <script type="text/javascript" src="../../config.js"></script>
 </html>
 
 <!-- https://discord.com/api/webhooks/1237458052425453648/GlYzaoHzwxKaEQHVuprdDU-M-e2ovqoc1RdHFcuDb4Ur8cRo6Hp7MYHbbqPDe0hD_egk -->
