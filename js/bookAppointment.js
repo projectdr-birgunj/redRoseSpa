@@ -1,6 +1,9 @@
 // import { DISCORD_WEBHOOK_URL as webhookUrl } from "../api.js";
 // const DISCORD_WEBHOOK_URL = require("../api.js");
-
+const date = new Date();
+var today = date.toLocaleDateString("en-CA", { timeZone: "Asia/Kathmandu" });
+console.log(today);
+document.getElementById("date").setAttribute("min", today);
 async function sendContact(ev) {
   ev.preventDefault();
 

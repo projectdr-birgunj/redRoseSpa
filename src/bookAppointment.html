@@ -82,8 +82,9 @@
               type="text"
               name="name"
               id="name"
-              placeholder="Full Name"
+              placeholder="Enter your full name"
               class="formbold-form-input"
+              required
             />
           </div>
           <div class="formbold-mb-5">
@@ -91,11 +92,14 @@
               Phone Number
             </label>
             <input
-              type="text"
+              type="number"
               name="phone"
               id="phone"
-              placeholder="Enter your phone number"
+              placeholder="Enter your 10 digit phone number"
               class="formbold-form-input"
+              maxlength="10"
+              pattern="\\d{10}"
+              required
             />
           </div>
           <div class="formbold-mb-5">
@@ -160,6 +164,7 @@
                   name="date"
                   id="date"
                   class="formbold-form-input"
+                  required
                 />
               </div>
             </div>
@@ -171,6 +176,7 @@
                   name="time"
                   id="time"
                   class="formbold-form-input"
+                  required
                 />
               </div>
             </div>
