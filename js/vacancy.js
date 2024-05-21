@@ -1,30 +1,20 @@
 // import { DISCORD_WEBHOOK_URL as webhookUrl } from "../api.js";
 // const DISCORD_WEBHOOK_URL = require("../api.js");
-const date = new Date();
-var today = date.toLocaleDateString("en-CA", { timeZone: "Asia/Kathmandu" });
-console.log(today);
-document.getElementById("date").setAttribute("min", today);
 async function sendContact(ev) {
   ev.preventDefault();
 
   const custName = document.getElementById("name").value;
   const custPhone = document.getElementById("phone").value;
-  const custEmail = document.getElementById("email").value;
-  const custService = document.getElementById("service").value;
-  const appointmentDate = document.getElementById("date").value;
-  const appointmentTime = document.getElementById("time").value;
+  const custAddress = document.getElementById("address").value;
 
   const webhookBody = {
     embeds: [
       {
-        title: "Booking Form Submitted",
+        title: "Vacancy Form Submitted",
         fields: [
           { name: "Name", value: custName },
           { name: "Phone", value: custPhone },
-          { name: "Email", value: custEmail },
-          { name: "Service", value: custService },
-          { name: "Date", value: appointmentDate },
-          { name: "Time", value: appointmentTime },
+          { name: "Adress", value: custAddress },
         ],
       },
     ],
@@ -46,7 +36,7 @@ async function sendContact(ev) {
 
   if (response.ok) {
     setTimeout(() => {
-      window.location.href = "../thankyou.html";
+      window.location.href = "thankyou_vacancy.html";
     }, 100);
   } else {
     alert("There was an error! Try again later!");

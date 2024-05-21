@@ -4,9 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Red Rose Spa</title>
-    <link rel="stylesheet" href="../css/bookAppointment.css" />
-    <link rel="stylesheet" href="../css/header.css" />
-    <link rel="stylesheet" href="../css/footer.css" />
+    <link rel="stylesheet" href="css/vacancy.css" />
+    <link rel="stylesheet" href="css/bookAppointment.css" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/footer.css" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css"
@@ -42,11 +43,11 @@
         </div>
         <div class="logo-text"><span>Red Rose Spa</span></div>
         <!-- <input type="checkbox" name="" id="">
-                <div class="hamburger-lines">
-                    <span class="line line1"></span>
-                    <span class="line line2"></span>
-                    <span class="line line3"></span>
-                </div> -->
+                      <div class="hamburger-lines">
+                          <span class="line line1"></span>
+                          <span class="line line2"></span>
+                          <span class="line line3"></span>
+                      </div> -->
         <!-- hamburger new -->
         <input
           type="checkbox"
@@ -71,6 +72,22 @@
       </div>
     </nav>
     <!-- HEADER SECTION ENDS -->
+
+    <div class="card bg-primary text-white m-2 card-manual-css card-manual">
+      <div class="card-body">
+        <h2 class="card-title card-title-manual">
+          VACANCY! VACANCY!! VACANCY!!!
+        </h2>
+        <h4 class="card-text card-title-manual">
+          महिला कर्मचारीको लागि रिक्ति
+        </h4>
+        <p class="card-title-manual">हामीलाई ५ जना महिला कर्मचारी चाहिएको छ।</p>
+        <ul>
+          <li>बसोबास र खानपान नि:शुल्क।</li>
+          <li>तलब: रु १६,००० देखि रु १८,००० सम्म।</li>
+        </ul>
+      </div>
+    </div>
 
     <!-- Appointment section starts here -->
     <div class="formbold-main-wrapper">
@@ -103,87 +120,18 @@
             />
           </div>
           <div class="formbold-mb-5">
-            <label for="email" class="formbold-form-label">
-              Email Address
-            </label>
+            <label for="email" class="formbold-form-label"> Address </label>
             <input
-              type="email"
-              name="email"
-              id="email"
-              placeholder="Enter your email"
+              type="text"
+              name="address"
+              id="address"
+              placeholder="Enter your address"
               class="formbold-form-input"
             />
           </div>
-          <div class="formbold-input-group">
-            <label class="formbold-form-label"> Choose your service </label>
-            <select class="formbold-form-select" name="service" id="service">
-              <option class="formbold-form-input" value="moroccon_bath_massage">
-                Moroccon Bath Massage
-              </option>
-              <option class="formbold-form-input" value="fish_Massage">
-                Fish Massage
-              </option>
-              <option class="formbold-form-input" value="steam_Bath">
-                Steam Bath
-              </option>
-              <option class="formbold-form-input" value="oil_Massage">
-                Oil Massage
-              </option>
-              <option class="formbold-form-input" value="face_Massage">
-                Face Massage
-              </option>
-              <option class="formbold-form-input" value="head_Massage">
-                Head Massage
-              </option>
-              <option class="formbold-form-input" value="trekket_Massage">
-                Oil Massage
-              </option>
-              <option class="formbold-form-input" value="aroma_Massage">
-                Aroma Massage
-              </option>
-              <option class="formbold-form-input" value="potli_Massage">
-                Potli Massage
-              </option>
-              <option class="formbold-form-input" value="thai_Massage">
-                Thai Massage
-              </option>
-              <option class="formbold-form-input" value="hot_stone_Massage">
-                Hot Stone Massage
-              </option>
-              <option class="formbold-form-input" value="Deep_tissue_Massage">
-                Deep Tissue Massage
-              </option>
-            </select>
-          </div>
-          <div class="flex flex-wrap formbold--mx-3">
-            <div class="w-full sm:w-half formbold-px-3">
-              <div class="formbold-mb-5 w-full">
-                <label for="date" class="formbold-form-label"> Date </label>
-                <input
-                  type="date"
-                  name="date"
-                  id="date"
-                  class="formbold-form-input"
-                  required
-                />
-              </div>
-            </div>
-            <div class="w-full sm:w-half formbold-px-3">
-              <div class="formbold-mb-5">
-                <label for="time" class="formbold-form-label"> Time </label>
-                <input
-                  type="time"
-                  name="time"
-                  id="time"
-                  class="formbold-form-input"
-                  required
-                />
-              </div>
-            </div>
-          </div>
           <div>
             <button type="submit" id="fetch-data-button" class="formbold-btn">
-              Book Appointment
+              Submit
             </button>
           </div>
         </form>
@@ -231,8 +179,7 @@
     </footer>
     <!-- footer section ends here -->
   </body>
-
-  <script type="text/javascript" src="../js/bookAppointment.js"></script>
+  <script type="text/javascript" src="../js/vacancy.js"></script>
   <!-- <script type="module" src="../api.js"></script> -->
   <script type="text/javascript" src="../../config.js"></script>
 </html>
